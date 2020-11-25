@@ -1,0 +1,21 @@
+site_name: IsoTV Documentation
+
+repo_name: sannalda/nanoiso
+repo_url: https://github.molgen.mpg.de/MayerGroup/IsoTV
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: deep purple
+    accent: deep purple
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+
+nav:
+    - Introduction: index.md
+    - Tools: tools.md
