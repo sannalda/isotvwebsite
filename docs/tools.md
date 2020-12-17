@@ -1,30 +1,18 @@
-# External Tools
+# Tools used in IsoTV
 
-NanoIso uses and combines many external tools. Below are references and descriptions for all the tools used.
+IsoTV incorporates many external tools. Below are descriptions and references to all the tools used.
 
-## Preprocessing
+## ONT Reads Processing
 
-### Preprocessing
 * [Filtlong](https://github.com/rrwick/Filtlong/) - Filtering reads by their quality.
 * [Pychopper](https://github.com/nanoporetech/pychopper) - Finding full length transcripts.
-
-### Transcriptome
 * [Pinfish](https://github.com/nanoporetech/pinfish) - Obtaining transcription using genome-based transcript polishing.
 * [Gffcompare](https://github.com/gpertea/gffcompare) - Comparing obtained transcription to existing annotation.
-
-### Quantification
 * [Minimap2](https://github.com/lh3/minimap2) - Mapping reads to a *de novo* defined transcriptome.
 
-## Analysis
+## Functional Feature Analysis
 
-### Disorder
-* [IUPred2A](https://iupred2a.elte.hu/) - Identify regions of disorder in proteins.
-
-### Domain
-* [InterProScan](https://github.com/ebi-pf-team/interproscan/wiki) - Command line version of InterPro, allowing to predict a protein's function using data gathered from many different resources.
-
-### Structure
+* [ScanProsite](https://prosite.expasy.org/scanprosite/) - Identify potential protein functional sites and motifs from the [PROSITE](https://prosite.expasy.org/) database.
+* [InterProScan](https://github.com/ebi-pf-team/interproscan/wiki) - Command line version of InterPro, allowing to predict protein function using data gathered from many different resources. Used for [Pfam](https://pfam.xfam.org/) protein domain prediction.
 * [Porter5](https://github.com/mircare/Porter5/) - Protein secondary structure prediction.
-
-### Phosphorylation Sites
-* [ScanProsite](https://prosite.expasy.org/scanprosite/) - Scans for phosphorylation binding motifs.
+* [IUPred2A](https://iupred2a.elte.hu/) - Identify regions of disorder.

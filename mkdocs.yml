@@ -1,6 +1,6 @@
 site_name: IsoTV Documentation
 
-repo_name: sannalda/nanoiso
+repo_name: MayerGroup/isotv
 repo_url: https://github.molgen.mpg.de/MayerGroup/IsoTV
 
 theme:
@@ -19,3 +19,26 @@ plugins:
 nav:
     - Introduction: index.md
     - Tools: tools.md
+    - Installation:
+      - Prerequisites: prerequisite.md
+      - Source: source.md
+      - Configuration: configuration.md
+    - Modules:
+        - Overview: overview.md
+        - Processing:
+            - Basecalling: basecalling.md
+            - Preprocessing: preprocessing.md
+            - Transcriptome: transcriptome.md
+            - Correction: correction.md
+            - Quantification: quantification.md
+        - Translation: translation.md
+        - Features:
+            - PTM Sites: ptms.md
+            - Secondary Structure: structure.md
+            - Protein Domain: domain.md
+            - Disorder Region: disorder.md
+        - Visualization: visualization.md
+    - Tutorial:
+        - General: general.md
+    - Release Notes: release.md
+    - Citations: citations.md
