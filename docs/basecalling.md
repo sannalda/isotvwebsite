@@ -1,14 +1,19 @@
 # Basecalling
 
+Coming soon!
+
 ## Usage
 
-Input - `RawData/X.fastq`
+## Configuration
+
+## Output Folder Structure
+
+<!-- Input - `RawData/X.fastq`
 
 Output - `Results/Pychopper/X.pychop.fastq`
 
 `snakemake`
 
-## Configuration
 
 Below are changes that can be configured in the **config.yaml** file or explicitly specified in the command line.
 
@@ -17,7 +22,6 @@ Below are changes that can be configured in the **config.yaml** file or explicit
 `min_mean_q: 5` - Minimum read quality to keep.
 
 
-## Output Folder Structure
 
 ```
 | -- FilteredData/
@@ -28,3 +32,4 @@ Below are changes that can be configured in the **config.yaml** file or explicit
         | -- X.pychop.fastq
         ...
 ```
+-->

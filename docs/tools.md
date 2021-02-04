@@ -1,6 +1,6 @@
 # Tools used in IsoTV
 
-IsoTV incorporates many external tools. Below are descriptions and references to all the tools used.
+IsoTV incorporates many external tools. Below are descriptions and references to all the tools that were used.
 
 ## ONT Reads Processing
 
@@ -9,6 +9,7 @@ IsoTV incorporates many external tools. Below are descriptions and references to
 * [Pinfish](https://github.com/nanoporetech/pinfish) - Obtaining transcription using genome-based transcript polishing.
 * [Gffcompare](https://github.com/gpertea/gffcompare) - Comparing obtained transcription to existing annotation.
 * [Minimap2](https://github.com/lh3/minimap2) - Mapping reads to a *de novo* defined transcriptome.
+* [DeSeq2](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8) - Normalize isoform expression across samples. 
 
 ## Functional Feature Analysis
 

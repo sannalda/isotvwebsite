@@ -25,14 +25,14 @@ nav:
       - Configuration: configuration.md
     - Modules:
         - Overview: overview.md
-        - Processing:
+        - ONT Processing:
             - Basecalling: basecalling.md
             - Preprocessing: preprocessing.md
             - Transcriptome: transcriptome.md
             - Correction: correction.md
             - Quantification: quantification.md
-        - Translation: translation.md
-        - Features:
+        - Isoform Translation: translation.md
+        - Functional Features:
             - PTM Sites: ptms.md
             - Secondary Structure: structure.md
             - Protein Domain: domain.md
@@ -40,5 +40,9 @@ nav:
         - Visualization: visualization.md
     - Tutorial:
         - General: general.md
+        - Setup: setup.md
+        - ONT Processing: processing.md
+        - Feature Visualization: features.md
+    - FAQ: faq.md
     - Release Notes: release.md
     - Citations: citations.md

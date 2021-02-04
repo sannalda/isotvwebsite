@@ -6,11 +6,17 @@ In order to translate a transcript, open reading frames were identified using st
 
 ## Usage
 
-Input -
+ONT Processing Input -
 ```
 /path/to/input/genes/genes.tab
-/Results/GffCompare/nanopore.combined.gtf/
+/Results/GffCompare/nanopore.combined.gtf
 /Pinfish/corrected_transcriptome_polished_collapsed_tcons_nonredundant.fas
+```
+
+Gene input -
+```
+/path/to/input/genes/genes.tab
+/path/to/gene_sequences.fas
 ```
 
 Output - `/Genes/GENE/Transcripts/x.fa`

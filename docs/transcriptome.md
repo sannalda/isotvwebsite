@@ -16,7 +16,7 @@ Results/Pychopper/X.pychop.fastq
 
 Output - `Results/Gffcompare/nanopore.combined.gtf`
 
-`snakemake`
+<!--`snakemake`-->
 
 ## Configuration
 
