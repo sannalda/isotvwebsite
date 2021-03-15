@@ -1,6 +1,6 @@
 # Introduction
 
-IsoTV is Snakemake pipeline to analyze and visualize functional features of translated transcript isoforms. IsoTV incorporates various tools to predict protein domains, secondary structure, disordered regions, and post-translational modification sites. The visualization facilitates comparison of the set of transcript isoforms expressed across conditions and explored the functional consequences of isoform differences. IsoTV supports a range of transcriptome sequencing technologies, including short-reads, Oxford Nanopore (ONT) long-reads, Pacific Bio-sciences (PacBio) long-reads. It also supports other inputs, including single or multiple genes.
+IsoTV is Snakemake pipeline to analyze and visualize functional features of translated transcript isoforms. IsoTV incorporates various tools to predict protein domains, secondary structure, disordered regions, and post-translational modification sites. The visualization facilitates comparison of the set of transcript isoforms expressed across conditions and explored the functional consequences of isoform differences. IsoTV supports a range of transcriptome sequencing technologies, including short-reads, Oxford Nanopore (ONT) long-reads, Pacific Bio-sciences (PacBio) long-reads. It also supports other inputs, including single or multiple gene sequences.
 
 There are three major components to this tool:
 
