@@ -1,20 +1,20 @@
 # Functional Features Prediction and Visualization Tutorial
 
-The purpose of this tutorial is to demonstrate how to predict and visualizing transcripts using IsoTV. The following inputs will be used to visualize the *PDK2* gene: annotated transcriptome file (.gtf), transcript sequences (.fa), and isoform expression.
+The purpose of this tutorial is to demonstrate how to predict and visualizing transcripts using IsoTV. The following inputs will be used to visualize the *PDK2* gene: annotated transcriptome file (.gtf), transcript sequences (.fa/.fas), and isoform expression.
 
-The data used for tutorial can be found in the GitHub page under `example/data`.
+The data used for tutorial can be found in the [GitHub](https://github.molgen.mpg.de/MayerGroup/IsoTV) under `example/data`.
 
-The goal will be to construct the figure for the *PDK2* gene from the IsoTV paper, which is also under `example/PDK2_tutorial.pdf`.
+The goal is to reconstruct the figure for the *PDK2* gene from the IsoTV paper, which can also be found under `example/PDK2_tutorial.pdf`. It will assume that IsoTV has already been downloaded and installed.
 
 ## Configuration
 
-To follow this tutorial, use the `config_example_pdk2.yaml` configuration can be used. However, this file needs to modify to include the full local paths for the required prediction tools (shown below). 
+To follow this tutorial, the `config_example_pdk2.yaml` configuration file can be used. However, the file needs to be modified to include the full local paths for the required prediction tools.
 
 Input file directory:
 ```
 | -- IsoTV
     | -- example/
-        | -- data /
+        | -- data/
             | -- genes.tab
             | -- PDK2.nanopore.gtf
             | -- PDK2.transcriptome.fas
@@ -43,7 +43,7 @@ The command below can be used to run IsoTV for this tutorial. This command needs
 snakemake -j 32 Results/Output/test.pdf --configfile config_example_pdk2.yaml
 ```
 
-It will use the `config_example_pdk2.yaml` configuration file, run prediction analysis on *PDK2*, and create `test.pdf` under `example/Results/Output/test.pdf`
+This will use the `config_example_pdk2.yaml` configuration file, run prediction analysis on *PDK2*, and create `test.pdf` under `example/Results/Output/test.pdf`
 
 ## Output
 
