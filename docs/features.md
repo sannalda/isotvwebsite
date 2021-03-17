@@ -45,7 +45,7 @@ snakemake -j 32 Results/Output/test.pdf --configfile config_example_pdk2.yaml
 
 This will use the `config_example_pdk2.yaml` configuration file, run prediction analysis on *PDK2* using 32 cores, and force the pipeline to create `Results/Output/test.pdf` under `example/`.
 
-However, the below commands are more apt for future proofing. The difference here is that the filename for the output pdf file (`test2.pdf` for i.e.) can be set directly from the command line:  
+However, the below commands are more apt for future analysis. The difference here is that the filename for the output pdf file (`test2.pdf` for i.e.) can be set directly from the command line:  
 ```
 snakemake -j 32 --configfile config_example_pdk2.yaml --config output_plots=test2.pdf
 ```
