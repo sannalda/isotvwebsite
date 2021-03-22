@@ -20,11 +20,11 @@ conda install conda=4.6.14
 
 ## Installing External Tools for Feature Analysis
 
-### IUPred2A
+### IUPred2A (Disorder Region)
 
 Install IUPred2A as described at [https://iupred2a.elte.hu/download_new](https://iupred2a.elte.hu/download_new)
 
-### InterProScan 5
+### InterProScan 5 (Protein Domain)
 
 Install InterProScan as described at [https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload](https://interproscan-docs.readthedocs.io/en/latest/HowToDownload.html), or as below:
 
@@ -51,12 +51,12 @@ md5sum -c panther-data-14.1.tar.gz.md5
 tar -pxvzf panther-data-14.1.tar.gz
 ```
 
-### Porter5
+### Brewery (Secondary Structure)
 
-Install Porter5 as described at [https://github.com/mircare/Porter5/](https://github.com/mircare/Porter5/), or as below:
+Install Brewery as described at [https://github.com/mircare/Brewery/](https://github.com/mircare/Brewery/), or as below:
 
 ```
-git clone https://github.com/mircare/Porter5/ --depth 1 && rm -rf Porter5/.git
+git clone https://github.com/mircare/Brewery/ --depth 1 && rm -rf Brewery/.git
 ```
 
 **Note: Involves additional requirements (e.g. HHblits, UniRef90). HHblits should already be part of** `environment.yaml`**.**
@@ -65,7 +65,7 @@ wget http://wwwuser.gwdg.de/~compbiol/data/hhsuite/databases/hhsuite_dbs/old-rel
 tar -zxvf uniprot20_2016_02.tgz
 ```
 
-### Prosite Scan
+### Prosite Scan (PTMs)
 
 Install Prosite Scan from [ftp://ftp.expasy.org/databases/prosite/ps_scan/](ftp://ftp.expasy.org/databases/prosite/ps_scan/).
 ```

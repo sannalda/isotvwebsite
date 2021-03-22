@@ -22,7 +22,7 @@ Input file directory:
     ...
 ```
 
-Paths to be changed:
+Paths for external tools to be changed (can be installed [here](prerequisite.md) ):
 ```
 iupred2a_path: "/path/to/iupred2a/iupred2a.py"
 
@@ -35,6 +35,15 @@ pfScan_path: "/path/to/ps_scan/pfscan"
 prositeDat_path: "/path/to/prosite.dat"
 ```
 
+For this tutorial, we are not basecalling or preprocessing ONT data, thus we set this parameters `False`. Annotation and quantification files are provided to complement the feature analysis, and thus set these to `True`. (This should already be set in the configuration file.)
+
+```
+basecalling: FALSE
+preprocess: FALSE
+annotation: TRUE
+quantification: TRUE
+```
+
 ## Executing
 
 The command below can be used to run IsoTV for this tutorial. This command needs to be executed from the IsoTV directory itself.
@@ -45,13 +54,13 @@ snakemake -j 32 Results/Output/test.pdf --configfile config_example_pdk2.yaml
 
 This will use the `config_example_pdk2.yaml` configuration file, run prediction analysis on *PDK2* using 32 cores, and force the pipeline to create `Results/Output/test.pdf` under `example/`.
 
-However, the below commands are more apt for future analysis. The difference here is that the filename for the output pdf file (`test2.pdf` for i.e.) can be set directly from the command line:  
+However, the below commands is more apt for any future analysis. The difference here is that the filename for the output pdf file (i.e. `test2.pdf`) can be set directly from the command line:  
 ```
 snakemake -j 32 --configfile config_example_pdk2.yaml --config output_plots=test2.pdf
 ```
-or from the configuration file (`output_plots: "test2.pdf"`):
+or from the configuration file (changing `output_plots: "test2.pdf"`):
 ```
-snakemake -j 32 --configfile config_local.yaml
+snakemake -j 32 --configfile config_example_pdk2.yaml
 ```
 
 ## Output
@@ -63,11 +72,12 @@ Output file directory:
 | -- IsoTV
     | -- example/
         | -- Results/
+            | -- Genes_temp/ (this folder is created and deleted)
             | -- Genes/
                 | -- PDK2/
+                    | -- PDK2_transcripts_filtered_analysis.txt
+                    | -- PDK2_transcripts_stats.txt
                     | -- PDK2_functional_analysis.pdf
-            | -- Plots/
-                | -- PDK2_functional_analysis.pdf
             | -- Output/
                 | -- test.pdf
     ...

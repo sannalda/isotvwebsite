@@ -16,8 +16,8 @@ Below outlines the steps to install IsoTV, which requires `conda` to be installe
 
 4. Initialize the conda environment with:
 
-        source activate isotv_env
+        conda activate isotv_env
 
 5. To deactivate the conda environment after use:
 
-        source deactivate
+        conda deactivate

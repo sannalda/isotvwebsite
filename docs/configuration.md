@@ -14,8 +14,8 @@ The below configuration ids can be configured in the **config.yaml** file or exp
 
 `basecalling: FALSE` - Boolean to decide whether reads should be basecalled.
 `preprocess: TRUE` - Boolean to decide whether to use the generated files from `processing` for isoform analysis or not. Refers specifically to the `nanopore_gtf`, `polished_reads`, and `counts_data` configuration for the *Analysis*.
-`annotation: TRUE` - Boolean stating to use annotation file.
-`quantification: TRUE` - Boolean to use quantification (isoform expression) file.
+`annotation: TRUE` - Boolean stating to use input annotation file.
+`quantification: TRUE` - Boolean stating to use input quantification (isoform expression) file.
 
 ### ONT long read processing
 
@@ -90,7 +90,7 @@ iupred2a: "/path/to/iupred2a/iupred2a.py"
 - Path to IUPred2A python file script.
 
 ```
-porter: TRUE
+brewery: TRUE
 brewery_path: "/path/to/Brewery/Brewery.py"
 ```
 - Boolean if secondary structure should be predicted and visualized.

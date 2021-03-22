@@ -2,9 +2,9 @@
 
 An additional method to understand the functional effects of transcripts is to analyze protein secondary structure.
 
-[Porter5](https://github.com/mircare/Porter5/) was used to predict secondary structure in 3 classes: alpha helix, beta sheets, and the rest.
+[Brewery](https://github.com/mircare/Brewery/) was used to predict secondary structure in 3 classes: alpha helix, beta sheets, and the rest.
 
-NOTE: Secondary structure analysis can take a long time. Unless absolutely necessary, we recommend to turn this feature off during analysis. 
+NOTE: Secondary structure analysis can take a long time. Unless absolutely necessary, we recommend to turn this feature off during analysis.
 
 ## Usage
 
